@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list ul {
+    padding-left: 0;
+    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li a {
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-list li:hover a {
+    background-color: black;
+    color: white;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+}
+
+main .content .content-description article p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: black;
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+    border: 3px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+
+
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}   
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: black;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+   
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+   
+    transition: all 0.1s ease-in-out;
+}
+   
+  main aside .social-media li a:hover {
+    color: purple;
+}
+
+  /* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+      flex-direction: column;
+}
+   
+    header.navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: 0.5rem;
+}
+   
+main {
+      padding: 1rem 3rem;
+}
+   
+main .content {
+      flex-direction: column;
+      gap: 2rem;
+}
+   
+main .content .content-description .title {
+      font-size: 3rem;
+}
+   
+main .content .content-description article p {
+      font-size: 1rem;
+}
+   
+main .content .content-image {
+      order: -1;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+figure .aku {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
